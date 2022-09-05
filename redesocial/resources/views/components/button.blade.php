@@ -1,1 +1,1 @@
-<button type="{{ $type }}" class="btn btn-{{ $color }}">{{ $text }}</button>
+<button type="{{ $type }}" id="{{ $id }}" class="btn btn-{{ $color }}">{{ $text }}</button>

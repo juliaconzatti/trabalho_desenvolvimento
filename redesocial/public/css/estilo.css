@@ -1,0 +1,42 @@
+body{
+    background: rgb(255, 235, 252);
+}
+
+
+#btn{
+    margin-top: 2%;
+    width: 100%;
+    font-size: 18px;
+}
+
+#btns{
+    margin-top: 10%;
+}
+
+#divforms{
+    background-color: transparent;
+}
+
+.btn{
+    width: 50%;
+    margin-left: auto;
+}
+
+a:link{
+    text-decoration:none;
+    color:rgb(36, 140, 189);
+    }
+    
+    a:visited{
+    text-decoration:none;
+    color:#8f7289;
+    }
+
+    p,
+h1 {
+    text-align: center;
+}
+
+h5 {
+    text-align: center;
+}
