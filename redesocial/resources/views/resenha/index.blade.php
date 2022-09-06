@@ -2,7 +2,7 @@
 @extends('base.index')
 
 @section('container')
-@extends('cadclube')
+@extends('resenha')
 
 
 

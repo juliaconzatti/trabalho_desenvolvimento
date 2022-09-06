@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use App\Http\Controllers\CadastroclubeController;
 
 class UsuariosController extends Controller
 {
@@ -22,7 +21,7 @@ class UsuariosController extends Controller
             // Tenta o login
             if (Auth::attempt($credenciais)) {
                 session()->regenerate();
-                return redirect()->route('cadastroclube');
+                return redirect()->route('cadclube');
             } else {
                 // Login deu errado (usuário ou senha inválidos)
                 return redirect()->route('login')->with(

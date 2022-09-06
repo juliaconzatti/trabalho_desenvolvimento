@@ -6,20 +6,20 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 
-class CadastroclubeController extends Controller
+class CluberomanceController extends Controller
 {
     function index(){
-        $cadastroclube = DB::table('clubes')
+        $cluberomance = DB::table('clubes')
         ->select()
         ->get();
 
-        return view('cadastroclube.index', [
-            'cadastroclube' => $cadastroclube
+        return view('cluberomance.index', [
+            'cluberomance' => $cluberomance
         ]);
     }
 
     function create(){
-        return view('cadastroclube.cadclube');
+        return view('cluberomance.cluberomance');
     }
 
     function store(Request $request){
@@ -30,14 +30,14 @@ class CadastroclubeController extends Controller
 
         DB::table('usuarios')->insert($data);
 
-        return redirect('/cadastroclube');
+        return redirect('/cluberomance');
     }
 
     function show($id){
-        $cadastroclube = DB::table('clubes')
+        $cluberomance = DB::table('clubes')
         ->find($id);
 
-        return view('cadastroclube.show', ['cadastroclube' => $cadastroclube]);
+        return view('cluberomance.show', ['cluberomance' => $cluberomance]);
     }
 }
 

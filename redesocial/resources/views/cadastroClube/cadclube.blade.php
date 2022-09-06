@@ -4,7 +4,8 @@
 <form action='/cadastroclube/store' method='POST'>
     <input type='hidden' name='_token' value='{{ csrf_token() }}' />
 
-    <div class="my-5">
+    <br>
+    <div class="mt-5">
     <div class="carouselcards">
         <div id="carouselCadastro" class="carousel carousel-dark slide" data-ride="carousel" data-interval="0">
           <div class="carousel-inner">
