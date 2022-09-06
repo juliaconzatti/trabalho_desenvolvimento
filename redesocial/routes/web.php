@@ -38,10 +38,12 @@ Route::get('/criarconta', [CriarcontaController::class, 'create'])->name("create
 Route::post('/criarconta/store', [CriarcontaController::class, 'store']);
 
 
-Route::get('/cadastroclube/index', [CadastroclubeController::class, 'index']);
+Route::get('/cadastroclube/store/{id}', [CadastroclubeController::class, 'store'])->name("store.clube");
+
+
 Route::get('/cadastroclube/show/{id}', [CadastroclubeController::class, 'show'])->where('id', '[0-9]+');
-Route::get('/cadastroclube', [CadastroclubeController::class, 'create'])->name("cadclube");
-Route::post('/cadastroclube', [CadastroclubeController::class, 'store'])->name("store");
+Route::get('/cadastroclube/', [CadastroclubeController::class, 'index']);
+// Route::post('/cadastroclube', [CadastroclubeController::class, 'store'])->name("store");
 // Route::get('/cadastroclube', function () {
 // })->middleware('auth');
 

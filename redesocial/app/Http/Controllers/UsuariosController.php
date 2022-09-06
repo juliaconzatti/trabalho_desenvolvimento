@@ -21,7 +21,8 @@ class UsuariosController extends Controller
             // Tenta o login
             if (Auth::attempt($credenciais)) {
                 session()->regenerate();
-                return redirect()->route('cadclube');
+                $form->session()->put('usuario', $credenciais['username']);
+                return redirect('cadastroclube');
             } else {
                 // Login deu errado (usuário ou senha inválidos)
                 return redirect()->route('login')->with(

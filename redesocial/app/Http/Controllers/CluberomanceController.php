@@ -12,7 +12,6 @@ class CluberomanceController extends Controller
         $cluberomance = DB::table('clubes')
         ->select()
         ->get();
-
         return view('cluberomance.index', [
             'cluberomance' => $cluberomance
         ]);
@@ -22,16 +21,12 @@ class CluberomanceController extends Controller
         return view('cluberomance.cluberomance');
     }
 
-    function store(Request $request){
-        $data = $request->all();
-        unset($data['_token']);
+    // function store(Request $request){
+    //     $uid = DB::table('usuarios')->select('id')->where('id', '=', $request->session()->get("usuario"))->first();
+    //     DB::statement("insert into usuarios_clubes (id_usuario, id_clube) values ($uid, 1)");
 
-        $data["password"] = Hash::make($data["password"]);
-
-        DB::table('usuarios')->insert($data);
-
-        return redirect('/cluberomance');
-    }
+    //     return redirect('/cluberomance');
+    // }
 
     function show($id){
         $cluberomance = DB::table('clubes')

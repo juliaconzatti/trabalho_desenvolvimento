@@ -1,10 +1,3 @@
-CREATE TABLE clientes(
-    id INT NOT NULL AUTO_INCREMENT,
-    email VARCHAR(50) NOT NULL,
-    username VARCHAR(15) NOT NULL,
-    password VARCHAR(30) NOT NULL,
-    PRIMARY KEY (id)
-);
 
 CREATE TABLE clubes(
     id INT NOT NULL AUTO_INCREMENT,
@@ -35,3 +28,12 @@ CREATE TABLE atualizacoes(
     comentario TEXT NOT NULL,
     PRIMARY KEY (id)
 );
+
+create table usuarios_clubes (
+    id int NOT NULL AUTO_INCREMENT,
+    id_usuario bigint(20) unsigned not null,
+    id_clube int not null,
+    PRIMARY KEY (id),
+    CONSTRAINT FOREIGN KEY (id_usuario) REFERENCES usuarios(id),
+    CONSTRAINT FOREIGN KEY (id_clube) REFERENCES clubes(id)
+    );

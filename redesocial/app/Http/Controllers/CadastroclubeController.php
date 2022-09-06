@@ -13,7 +13,7 @@ class CadastroclubeController extends Controller
         ->select()
         ->get();
 
-        return view('cadastroclube.index', [
+        return view('cadastroClube.cadclube', [
             'cadastroclube' => $cadastroclube
         ]);
     }
@@ -22,15 +22,23 @@ class CadastroclubeController extends Controller
         return view('cadastroclube.cadclube');
     }
 
-    function store(Request $request){
-        $data = $request->all();
-        unset($data['_token']);
+    function store(Request $request, $id){
+        $uid = DB::table('usuarios')->select('id')->where('username', '=', $request->session()->get("usuario"))->first();
+        $cadastros = DB::table('usuarios_clubes')->select()->get();
+        
+        foreach($cadastros as $c){
+            if($c->id_usuario == $uid->id && $c->id_clube == $id){
+                return redirect()->back()->withErrors(['erro' => 'falar q esta cadstsro sla']);
+                // fazer menagem na viw 
+                break;
+            }
+        }
+        DB::statement("insert into usuarios_clubes (id_usuario, id_clube) values ($uid->id, $id)");
+        switch($id){
+            case 1: return redirect('/cluberomance/index'); break;
+        }
 
-        $data["password"] = Hash::make($data["password"]);
-
-        DB::table('usuarios')->insert($data);
-
-        return redirect('/cadastroclube');
+       
     }
 
     function show($id){

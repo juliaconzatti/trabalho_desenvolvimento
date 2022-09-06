@@ -21,7 +21,9 @@
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               </div>
               <div class="card-footer text-center">
-              <button class="btn btn-outline-dark" type="submit" value="1" name="cadastrar" id="cadastrar">Cadastrar-se no clube</button>
+                <form>
+              <a href="{{route('store.clube', 1)}}" class="btn btn-outline-dark" name="cadastrar" id="cadastrar_romance">Cadastrar-se no clube</a>
+              </form>
               </div>
             </div>
           </div>
