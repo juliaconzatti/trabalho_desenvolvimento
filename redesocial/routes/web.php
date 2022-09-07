@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CriarcontaController;
 use App\Http\Controllers\UsuariosController;
 use App\Http\Controllers\CadastroclubeController;
+use App\Http\Controllers\AcessarclubeController;
 use App\Http\Controllers\CluberomanceController;
 use App\Http\Controllers\ForumController;
 use App\Http\Controllers\ResenhaController;
@@ -39,13 +40,14 @@ Route::post('/criarconta/store', [CriarcontaController::class, 'store']);
 
 
 Route::get('/cadastroclube/store/{id}', [CadastroclubeController::class, 'store'])->name("store.clube");
-
-
 Route::get('/cadastroclube/show/{id}', [CadastroclubeController::class, 'show'])->where('id', '[0-9]+');
 Route::get('/cadastroclube/', [CadastroclubeController::class, 'index']);
 // Route::post('/cadastroclube', [CadastroclubeController::class, 'store'])->name("store");
 // Route::get('/cadastroclube', function () {
 // })->middleware('auth');
+
+Route::get('/acessarclube/show/{id}', [AcessarclubeController::class, 'show'])->where('id', '[0-9]+');
+Route::get('/acessarclube/', [AcessarclubeController::class, 'index']);
 
 Route::get('/cluberomance/index', [CluberomanceController::class, 'index']);
 Route::get('/cluberomance/show/{id}', [CluberomanceController::class, 'show'])->where('id', '[0-9]+');

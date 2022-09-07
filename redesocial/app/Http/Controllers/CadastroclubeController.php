@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 
+
+
 class CadastroclubeController extends Controller
 {
     function index(){
@@ -35,7 +37,17 @@ class CadastroclubeController extends Controller
         }
         DB::statement("insert into usuarios_clubes (id_usuario, id_clube) values ($uid->id, $id)");
         switch($id){
-            case 1: return redirect('/cluberomance/index'); break;
+            case 1: return redirect('/cluberomance'); break;
+
+            case 2: return redirect('/clubefantasia'); break;
+
+            case 3: return redirect('/clubechicklit'); break;
+
+            case 4: return redirect('/clubeterror'); break;
+
+            case 5: return redirect('/clubemisterio'); break;
+
+            case 6: return redirect('/clubeficcao'); break;
         }
 
        

@@ -16,8 +16,8 @@
                 Clubes do Livro
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Entrar em mais clubes</a></li>
-                <li><a class="dropdown-item" href="#">Meus clubes</a></li>
+                <li><a class="dropdown-item" href="cadastroclube">Entrar em mais clubes</a></li>
+                <li><a class="dropdown-item" href="acessarclube">Meus clubes</a></li>
                 <li>
                   <hr class="dropdown-divider">
                 </li>

@@ -35,7 +35,7 @@
                 <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
               </div>
               <div class="card-footer text-center">
-              <button class="btn btn-outline-dark" type="submit" name="cadastrar" id="cadastrar">Cadastrar-se no clube</button>
+                <a href="{{route('store.clube', 2)}}" class="btn btn-outline-dark" name="cadastrar" id="cadastrar_fantasia">Cadastrar-se no clube</a>
               </div>
             </div>
           </div>
@@ -47,7 +47,7 @@
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
               </div>
               <div class="card-footer text-center">
-              <button class="btn btn-outline-dark" type="submit" name="cadastrar" id="cadastrar">Cadastrar-se no clube</button>
+                <a href="{{route('store.clube', 3)}}" class="btn btn-outline-dark" name="cadastrar" id="cadastrar_chicklit">Cadastrar-se no clube</a>
               </div>
             </div>
           </div>
@@ -66,7 +66,7 @@
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               </div>
               <div class="card-footer text-center">
-              <button class="btn btn-outline-dark" type="submit" name="cadastrar" id="cadastrar">Cadastrar-se no clube</button>
+                <a href="{{route('store.clube', 4)}}" class="btn btn-outline-dark" name="cadastrar" id="cadastrar_terror">Cadastrar-se no clube</a>
               </div>
             </div>
           </div>
@@ -78,7 +78,7 @@
                 <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
               </div>
               <div class="card-footer text-center">
-              <button class="btn btn-outline-dark" type="submit" name="cadastrar" id="cadastrar">Cadastrar-se no clube</button>
+                <a href="{{route('store.clube', 5)}}" class="btn btn-outline-dark" name="cadastrar" id="cadastrar_misterio">Cadastrar-se no clube</a>
               </div>
             </div>
           </div>
@@ -90,7 +90,7 @@
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
               </div>
               <div class="card-footer text-center">
-              <button class="btn btn-outline-dark" type="submit" name="cadastrar" id="cadastrar">Cadastrar-se no clube</button>
+                <a href="{{route('store.clube', 6)}}" class="btn btn-outline-dark" name="cadastrar" id="cadastrar_ficcao">Cadastrar-se no clube</a>
               </div>
             </div>
           </div>
