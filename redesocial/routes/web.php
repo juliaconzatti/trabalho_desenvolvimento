@@ -49,7 +49,7 @@ Route::get('/cadastroclube', [CadastroclubeController::class, 'index'])->name('c
 // Route::get('/cadastroclube', function () {
 // })->middleware('auth');
 
-Route::get('/acessarclube/store/{id}', [AcessarclubeController::class, 'store'])->name("store.clube");
+Route::get('/acessarclube/acc/{id}', [AcessarclubeController::class, 'store'])->name("acc.clube");
 Route::get('/acessarclube/show/{id}', [AcessarclubeController::class, 'show'])->where('id', '[0-9]+');
 Route::get('/acessarclube', [AcessarclubeController::class, 'index'])->name("teste.clube");
 Route::get('/acessarclube/destroy/{id}', [AcessarclubeController::class, 'destroy'])->where('id', '[0-9]+');

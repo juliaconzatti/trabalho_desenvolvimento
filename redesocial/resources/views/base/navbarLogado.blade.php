@@ -18,10 +18,6 @@
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="cadastroclube">Entrar em mais clubes</a></li>
                 <li><a class="dropdown-item" href="acessarclube">Meus clubes</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
               </ul>
             </li>
             <li class="nav-item">
