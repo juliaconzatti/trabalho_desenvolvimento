@@ -34,5 +34,13 @@ class CluberomanceController extends Controller
 
         return view('cluberomance.show', ['cluberomance' => $cluberomance]);
     }
+
+    function destroy($id){
+        DB::table('usuarios_clubes')
+        ->where('id', $id)
+        ->delete();
+
+        return redirect('/acessarclube');
+    }
 }
 

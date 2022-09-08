@@ -4,6 +4,12 @@
 <form action='/cadastroclube/store' method='POST'>
     <input type='hidden' name='_token' value='{{ csrf_token() }}' />
 
+    @section('container')
+    @if(session('erro'))
+    <div class="alert alert-danger" role="alert">{{session('erro')}}</div>
+    @endif
+    @endsection
+
     <br>
     <div class="mt-5">
     <div class="carouselcards">

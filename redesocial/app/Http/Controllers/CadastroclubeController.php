@@ -26,12 +26,11 @@ class CadastroclubeController extends Controller
 
     function store(Request $request, $id){
         $uid = DB::table('usuarios')->select('id')->where('username', '=', $request->session()->get("usuario"))->first();
-        $cadastros = DB::table('usuarios_clubes')->select()->get();
+        $cadastros = DB::table('usuarios_clubes')->select()->get(); 
         
         foreach($cadastros as $c){
             if($c->id_usuario == $uid->id && $c->id_clube == $id){
-                return redirect()->back()->withErrors(['erro' => 'falar q esta cadstsro sla']);
-                // fazer menagem na viw 
+                return redirect()->back()->with('erro', 'Você já está cadastrado no clube');
                 break;
             }
         }

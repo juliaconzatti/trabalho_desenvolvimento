@@ -1,4 +1,3 @@
-
 CREATE TABLE clubes(
     id INT NOT NULL AUTO_INCREMENT,
     nome VARCHAR(130) NOT NULL,

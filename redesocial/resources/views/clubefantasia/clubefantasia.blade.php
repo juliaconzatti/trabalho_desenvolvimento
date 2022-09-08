@@ -11,17 +11,18 @@
     <div class="col" id="divesq">
       <h3 class="text-left">Livro do mês:</h3>
           <a href="clubeRomance.php">
-            <img src="https://images-na.ssl-images-amazon.com/images/I/81AFV9waKfL.jpg" width="200px" height="300px">
+            <img src="https://m.media-amazon.com/images/I/51teHvn9B7L._SY346_.jpg" width="200px" height="300px">
           </a>
           <div id="btnBaixar">
-          <a href="livros/thelovehypothesis.pdf" download="livrodomes"><button class="btn btn-outline-dark" type="button">Fazer download</button></a>
+          <a href="livros/crescentcity.pdf" download="livrodomes"><button class="btn btn-outline-dark" type="button">Fazer download</button></a>
       </div>
         </div>
     <div class="col" id="divdir">
 <div>
 <h3 class="text-left">Descricão:</h3>
-<p class="text-break text-start">Praise for Tweet Cute “From meme wars to social media marketing, Lord accurately depicts various sides of today's online culture. 
-  Amid all the digital hoopla is an engaging story about family loyalty and pursuing one's own passions.</p>
+<p class="text-break text-start">Sarah J. Maas's brand-new CRESCENT CITY series begins with House of Earth and Blood: 
+  the story of half-Fae and half-human Bryce Quinlan as she seeks revenge in a contemporary fantasy world of magic, 
+  danger, and searing romance.</p>
 <div class="d-grid gap-2 col-6 mx-autot">
   <a  href="{{route('login')}}"><button class="btn btn-primary" type="button">Atualizar leitura</button></a>
   <a href="{{route('forum')}}""><button class="btn btn-success" type="button">Acessar fórum</button></a>
